@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{8AF3C0DD-012D-4CD0-B521-9549CB92D619}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{1C09B68E-FC3F-4480-87AD-60A82D4F9658}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{3F8DB097-7CAB-4A24-A133-C678CDEE3C26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionAPI.Application", "Core\OnionAPI.Application\OnionAPI.Application.csproj", "{74578256-1322-48D7-8AEF-C2D5332AE853}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionAPI.Domain", "Core\OnionAPI.Domain\OnionAPI.Domain.csproj", "{176A574B-7A20-406D-97AC-2F92B7FE3C7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionAPI.Infrastructure", "Infrastructure\OnionAPI.Infrastructure\OnionAPI.Infrastructure.csproj", "{617005BC-54E9-4183-9450-848C1DCD472C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionAPI.Persistence", "Infrastructure\OnionAPI.Persistence\OnionAPI.Persistence.csproj", "{B2BDD517-7C4E-4EAB-95B4-07356C959210}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionAPI.Api", "Presentation\OnionAPI.Api\OnionAPI.Api.csproj", "{D2226B08-EBE8-44B6-85F9-3E6362846534}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74578256-1322-48D7-8AEF-C2D5332AE853}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74578256-1322-48D7-8AEF-C2D5332AE853}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74578256-1322-48D7-8AEF-C2D5332AE853}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74578256-1322-48D7-8AEF-C2D5332AE853}.Release|Any CPU.Build.0 = Release|Any CPU
+		{176A574B-7A20-406D-97AC-2F92B7FE3C7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{176A574B-7A20-406D-97AC-2F92B7FE3C7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{176A574B-7A20-406D-97AC-2F92B7FE3C7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{176A574B-7A20-406D-97AC-2F92B7FE3C7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{617005BC-54E9-4183-9450-848C1DCD472C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{617005BC-54E9-4183-9450-848C1DCD472C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{617005BC-54E9-4183-9450-848C1DCD472C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{617005BC-54E9-4183-9450-848C1DCD472C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2BDD517-7C4E-4EAB-95B4-07356C959210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2BDD517-7C4E-4EAB-95B4-07356C959210}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2BDD517-7C4E-4EAB-95B4-07356C959210}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2BDD517-7C4E-4EAB-95B4-07356C959210}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2226B08-EBE8-44B6-85F9-3E6362846534}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2226B08-EBE8-44B6-85F9-3E6362846534}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2226B08-EBE8-44B6-85F9-3E6362846534}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2226B08-EBE8-44B6-85F9-3E6362846534}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{74578256-1322-48D7-8AEF-C2D5332AE853} = {8AF3C0DD-012D-4CD0-B521-9549CB92D619}
+		{176A574B-7A20-406D-97AC-2F92B7FE3C7A} = {8AF3C0DD-012D-4CD0-B521-9549CB92D619}
+		{617005BC-54E9-4183-9450-848C1DCD472C} = {1C09B68E-FC3F-4480-87AD-60A82D4F9658}
+		{B2BDD517-7C4E-4EAB-95B4-07356C959210} = {1C09B68E-FC3F-4480-87AD-60A82D4F9658}
+		{D2226B08-EBE8-44B6-85F9-3E6362846534} = {3F8DB097-7CAB-4A24-A133-C678CDEE3C26}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {020C98D7-FBF7-4E7A-8328-45EF8A048A26}
+	EndGlobalSection
+EndGlobal
