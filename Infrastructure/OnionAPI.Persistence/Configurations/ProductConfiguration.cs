@@ -1,6 +1,7 @@
 ﻿using Bogus;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using OnionAPI.Domain.Entities;
 
 
 namespace OnionAPI.Persistence.Configurations
