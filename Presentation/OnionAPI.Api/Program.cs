@@ -1,4 +1,5 @@
 using OnionAPI.Persistence;
+using OnionAPI.Application;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,7 @@ builder.Configuration.SetBasePath(env.ContentRootPath)
     .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
 
 builder.Services.AddPersistence(builder.Configuration);
+builder.Services.AddAplication();
 
 var app = builder.Build();
 
