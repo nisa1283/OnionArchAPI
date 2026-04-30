@@ -2,11 +2,6 @@
 using OnionAPI.Application.Interfaces.UnitOfWorks;
 using OnionAPI.Persistence.Context;
 using OnionAPI.Persistence.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OnionAPI.Persistence.UnitOfWorks
 {

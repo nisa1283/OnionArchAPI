@@ -1,23 +1,23 @@
 ﻿using Microsoft.EntityFrameworkCore.Query;
+using Microsoft.EntityFrameworkCore;
 using OnionAPI.Application.Interfaces.Repositories;
 using OnionAPI.Domain.Common;
-using System.Data.Entity;
-using System.Drawing.Printing;
+using System.Linq;
 using System.Linq.Expressions;
-using System.Threading.Tasks;
+using System.Security;
 
 namespace OnionAPI.Persistence.Repositories
 {
-    public class ReadRepository<T> : IReadRepository<T> where T : class,IEntityBase, new()
+    public class ReadRepository<T> : IReadRepository<T> where T : class, IEntityBase, new()
     {
         private readonly DbContext dbContext;
 
-        public ReadRepository(DbContext dbContext) 
+        public ReadRepository(DbContext dbContext)
         {
             this.dbContext =dbContext;
         }
 
-        private DbSet<T> Table { get=> dbContext.Set<T>(); }
+        private DbSet<T> Table { get => dbContext.Set<T>(); }
 
         public async Task<IList<T>> GetAllAsnyc(Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, bool enableTracking = false)
         {
@@ -59,7 +59,7 @@ namespace OnionAPI.Persistence.Repositories
             return await Table.CountAsync();
         }
 
-        public IQueryable<T> Find(Expression<Func<T, bool>> predicate,bool enableTracking=false)
+        public IQueryable<T> Find(Expression<Func<T, bool>> predicate, bool enableTracking = false)
         {
             if (!enableTracking) Table.AsNoTracking();
             return Table.Where(predicate);
