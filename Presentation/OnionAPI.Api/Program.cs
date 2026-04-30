@@ -1,5 +1,6 @@
 using OnionAPI.Persistence;
 using OnionAPI.Application;
+using OnionApi.Mapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +19,7 @@ builder.Configuration.SetBasePath(env.ContentRootPath)
 
 builder.Services.AddPersistence(builder.Configuration);
 builder.Services.AddAplication();
+builder.Services.AddCustomMapper();
 
 var app = builder.Build();
 
